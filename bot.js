@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "2";
+const prefix = "O";
 /////////////////////////
 ////////////////////////
 
@@ -313,10 +313,10 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === '1help') {
+    if (message.content === 'Ohelp') {
         let helpEmbed = new Discord.RichEmbed()
-        .setTitle('**الأوامر**')
-        .setDescription('**برفكس البوت (!)**')
+        .setTitle('الأوامر')
+        .setDescription('**برفكس البوت (O)**')
         .addField('play', 'لتشغيل اغنية')
         .addField('join', 'دخول رومك الصوتي')
         .addField('disconnect', 'الخروج من رومك الصوتي')
