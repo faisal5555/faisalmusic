@@ -337,7 +337,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : .FÁISAL ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`1play | FISAL MUSIC`,"http://twitch.tv/idk")
+client.user.setGame(`1play | FÁISAL MUSIC`,"http://twitch.tv/idk")
 client.user.setStatus("dnd")
 });
 
