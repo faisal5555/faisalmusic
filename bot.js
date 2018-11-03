@@ -313,9 +313,9 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === 'help') {
+    if (message.content === '1help') {
         let helpEmbed = new Discord.RichEmbed()
-        .setTitle('**أوامر الميوزك...**')
+        .setTitle('**الأوامر**')
         .setDescription('**برفكس البوت (!)**')
         .addField('play', 'لتشغيل اغنية')
         .addField('join', 'دخول رومك الصوتي')
@@ -337,7 +337,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : .FÁISAL ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`1play | FÁISAL MUSIC`,"http://twitch.tv/idk")
+client.user.setGame(`FÁISAL MÜSIC`,"http://twitch.tv/idk")
 client.user.setStatus("dnd")
 });
 
