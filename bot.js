@@ -342,8 +342,6 @@ client.on('ready', () => {
 
 
 
-
-
 client.on("message", message => {
       if (message.guild) {
       let embed = new Discord.RichEmbed()
@@ -356,39 +354,6 @@ client.on("message", message => {
 return;
           
   }
-const client = new Discord.RichEmbed()
-             .setAuthor(message.author.username, message.author.avatarURL)   
-             .setTitle(':hotsprings: | جاري ارسال رسالتك ') 
-             .addBlankField(true)
-             .addField(':two_men_holding_hands: | عدد الاعضاء المرسل لهم ', message.guild.memberCount , true)        
-             .addField(':incoming_envelope: | الرسالة ', args)
-             .setColor('RANDOM')  
-              message.channel.sendEmbed(client);  
-                 message.channel.send('لتأكيد الرسالة(نعم/لا)');
-
-      let user = message.author;
-const collector = new Discord.MessageCollector(message.channel, m => user === user, { time: 10000 }) 
-     collector.on('collect', message => {
-      if (message.content == "نعم") {
-              message.guild.members.forEach(m => {
-      var bc = new Discord.RichEmbed()
-             .setAuthor(message.author.username, message.author.avatarURL)
-             .addField(' الـسيرفر', `${message.guild.name}`,true)
-             .addField(' الـمرسل ', `${message.author.username}#${message.author.discriminator}`,true)
-             .addField(' الرسالة ', args)
-             .setThumbnail(message.guild.iconURL)
-             .setColor('RANDOM')
-             m.send(`${m}`,{embed: bc});
- })                
-  } else if (message.content == "لا") {
-return message.reply('لن يتم ارسال الرسالة');
-  }                          
-});
-  }
-  } else {
-return;
-  }        
-});
 
 
 
