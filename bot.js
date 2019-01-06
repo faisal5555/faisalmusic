@@ -337,7 +337,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : .FÁISAL ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`F9,music`,"http://twitch.tv/idk")
+client.user.setGame(`I do not care about anyone.`,"http://twitch.tv/idk")
 });
 
 
