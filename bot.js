@@ -273,4 +273,81 @@ if (message.content.startsWith(adminprefix + 'streaming')) {
 
 
 
+client.on('message', message => {
+var prefix = "O";
+
+  if (!message.content.startsWith(prefix)) return;
+  var args = message.content.split(' ').slice(1);
+  var argresult = args.join(' ');
+  if (message.author.id == '532258626535161866')
+return;
+
+if (message.content.startsWith(prefix + 'dnd')) {
+  if (message.author.id !== '532258626535161866') return message.react('⚠')
+client.user.setStatus('dnd');  
+message.react("✅")
+}
+                        
+ });
+
+
+client.on('message', message => {
+var prefix = "O";
+
+  if (!message.content.startsWith(prefix)) return;
+  var args = message.content.split(' ').slice(1);
+  var argresult = args.join(' ');
+  if (message.author.id == '532258626535161866')
+return;
+
+
+if (message.content.startsWith(prefix + 'online')) {
+  if (message.author.id !== '532258626535161866') return message.react('⚠')
+  client.user.setStatus('online');  
+message.react("✅")
+}
+                        
+ });
+
+client.on('message', message => {
+var prefix = "O";
+
+  if (!message.content.startsWith(prefix)) return;
+  var args = message.content.split(' ').slice(1);
+  var argresult = args.join(' ');
+  if (message.author.id == 410835593451405312)
+return;
+if (message.content.startsWith(prefix + 'idle')) {
+   if (message.author.id !== '532258626535161866') return message.react('⚠')
+client.user.setStatus('idle');  
+message.react("✅")
+}
+                        
+ });
+
+
+client.on('message', message => {
+var prefix = "O";
+
+  if (!message.content.startsWith(prefix)) return;
+  var args = message.content.split(' ').slice(1);
+  var argresult = args.join(' ');
+  if (message.author.id == '532258626535161866')
+return;
+
+
+if (message.content.startsWith(prefix + 'invisible')) {
+    if (message.author.id !== '532258626535161866') return message.react('⚠')
+client.user.setStatus('invisible');  
+message.react("✔")
+}
+                        
+ });
+
+
+
+
+
+
+
 client.login(process.env.BOT_TOKEN);
