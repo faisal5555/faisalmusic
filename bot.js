@@ -285,7 +285,7 @@ var prefix = "+";
   if (message.author.id == 410835593451405312)
 return;
 
-if (message.content.startsWith(prefix + 'dnd')) {
+if (message.content.startsWith(prefix + 'مشغول')) {
   if (message.author.id !== '400955088052420610') return message.react('⚠')
 client.user.setStatus('dnd');  
 message.react("✅")
@@ -304,7 +304,7 @@ var prefix = "+";
 return;
 
 
-if (message.content.startsWith(prefix + 'online')) {
+if (message.content.startsWith(prefix + 'متصل')) {
   if (message.author.id !== '400955088052420610') return message.react('⚠')
   client.user.setStatus('online');  
 message.react("✅")
@@ -320,7 +320,7 @@ var prefix = "+";
   var argresult = args.join(' ');
   if (message.author.id == 410835593451405312)
 return;
-if (message.content.startsWith(prefix + 'idle')) {
+if (message.content.startsWith(prefix + 'فلخارج')) {
    if (message.author.id !== '400955088052420610') return message.react('⚠')
 client.user.setStatus('idle');  
 message.react("✅")
@@ -339,7 +339,7 @@ var prefix = "+";
 return;
 
 
-if (message.content.startsWith(prefix + 'invisible')) {
+if (message.content.startsWith(prefix + 'مخفي')) {
     if (message.author.id !== '400955088052420610') return message.react('⚠')
 client.user.setStatus('invisible');  
 message.react("✔")
