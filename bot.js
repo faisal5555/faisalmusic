@@ -238,7 +238,7 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
 
 
 const adminprefix = "O";;
-const devs = ['532258506213163010'];
+const devs = ['400955088052420610'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -286,7 +286,7 @@ var prefix = "+";
 return;
 
 if (message.content.startsWith(prefix + 'dnd')) {
-  if (message.author.id !== '532625014382526467') return message.react('⚠')
+  if (message.author.id !== '400955088052420610') return message.react('⚠')
 client.user.setStatus('dnd');  
 message.react("✅")
 }
@@ -305,7 +305,7 @@ return;
 
 
 if (message.content.startsWith(prefix + 'online')) {
-  if (message.author.id !== '532625014382526467') return message.react('⚠')
+  if (message.author.id !== '400955088052420610') return message.react('⚠')
   client.user.setStatus('online');  
 message.react("✅")
 }
@@ -321,7 +321,7 @@ var prefix = "+";
   if (message.author.id == 410835593451405312)
 return;
 if (message.content.startsWith(prefix + 'idle')) {
-   if (message.author.id !== '532625014382526467') return message.react('⚠')
+   if (message.author.id !== '400955088052420610') return message.react('⚠')
 client.user.setStatus('idle');  
 message.react("✅")
 }
@@ -340,7 +340,7 @@ return;
 
 
 if (message.content.startsWith(prefix + 'invisible')) {
-    if (message.author.id !== '532625014382526467') return message.react('⚠')
+    if (message.author.id !== '400955088052420610') return message.react('⚠')
 client.user.setStatus('invisible');  
 message.react("✔")
 }
